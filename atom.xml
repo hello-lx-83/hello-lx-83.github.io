@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-22T15:48:55.844Z</updated>
+  <updated>2020-03-22T15:52:04.912Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/"/>
     <id>http://yoursite.com/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/</id>
     <published>2020-03-22T15:32:28.086Z</published>
-    <updated>2020-03-22T15:48:55.844Z</updated>
+    <updated>2020-03-22T15:52:04.912Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="悲惨"><a href="#悲惨" class="headerlink" title="悲惨"></a>悲惨</h1><p>其实我刚写了一大段，出问题了，然后没备份。  </p><hr><p>大概就是：<br>起因：今天不知道<strong>linux</strong>给某一个文件夹的拥有赋给另外一个用户，从<strong>root</strong>用户到我自己，觉得问题出在我是一路用的是<strong>root</strong>用户创建的博客，想要重新来过，重新开始了一段距离，这样好浪费时间啊，于是继续找怎么弄。<br>终于：  </p><blockquote><p>chown -R toughguy:toughguy *</p></blockquote><p>很奇怪，我把自己的东西给自己。</p><p>教训：避免不加思索的重新来过。</p><p><a href="www.blog.ifungo.top">Toughguy</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="悲惨"><a href="#悲惨" class="headerlink" title="悲惨"></a>悲惨</h1><p>其实我刚写了一大段，出问题了，然后没备份。  </p><hr><p>大概就是：<br>起因：今天不知道<strong>linux</strong>给某一个文件夹的拥有赋给另外一个用户，从<strong>root</strong>用户到我自己，觉得问题出在我是一路用的是<strong>root</strong>用户创建的博客，想要重新来过，重新开始了一段距离，这样好浪费时间啊，于是继续找怎么弄。<br>终于：  </p><blockquote><p>chown -R toughguy:toughguy *</p></blockquote><p>很奇怪，我把自己的东西给自己。</p><p>教训：避免不加思索的重新来过。</p>]]></content>
     
     <summary type="html">
     
