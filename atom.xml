@@ -5,9 +5,9 @@
   <subtitle>keep hungry,keep stupid.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://blog.ifungo.top/"/>
   <updated>2020-03-22T15:52:04.912Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://blog.ifungo.top/</id>
   
   <author>
     <name>LX</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>从头再来可能并不是一个好的办法</title>
-    <link href="http://yoursite.com/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/"/>
-    <id>http://yoursite.com/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/</id>
+    <link href="http://blog.ifungo.top/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/"/>
+    <id>http://blog.ifungo.top/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/</id>
     <published>2020-03-22T15:32:28.086Z</published>
     <updated>2020-03-22T15:52:04.912Z</updated>
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>我的第一篇博客文章</title>
-    <link href="http://yoursite.com/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-    <id>http://yoursite.com/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
+    <link href="http://blog.ifungo.top/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+    <id>http://blog.ifungo.top/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
     <published>2020-02-26T02:06:40.000Z</published>
     <updated>2020-03-22T10:25:40.947Z</updated>
     
