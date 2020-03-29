@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ifungo.top/"/>
-  <updated>2020-03-29T15:45:24.305Z</updated>
+  <updated>2020-03-29T15:48:32.384Z</updated>
   <id>http://blog.ifungo.top/</id>
   
   <author>
@@ -21,16 +21,13 @@
     <link href="http://blog.ifungo.top/2020/03/29/%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E8%B7%B5%EF%BC%9ATensorflow%E7%AC%94%E8%AE%B0%20%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://blog.ifungo.top/2020/03/29/%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E8%B7%B5%EF%BC%9ATensorflow%E7%AC%94%E8%AE%B0%20%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2020-03-29T15:15:17.822Z</published>
-    <updated>2020-03-29T15:45:24.305Z</updated>
+    <updated>2020-03-29T15:48:32.384Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="第一讲-神经网络计算"><a href="#第一讲-神经网络计算" class="headerlink" title="第一讲 神经网络计算"></a>第一讲 神经网络计算</h1><h2 id="人工智能三学派"><a href="#人工智能三学派" class="headerlink" title="人工智能三学派"></a>人工智能三学派</h2><h2 id="神经网络设计过程"><a href="#神经网络设计过程" class="headerlink" title="神经网络设计过程"></a>神经网络设计过程</h2><h2 id="张量生成"><a href="#张量生成" class="headerlink" title="张量生成"></a>张量生成</h2><h2 id="TF2常用函数1"><a href="#TF2常用函数1" class="headerlink" title="TF2常用函数1"></a>TF2常用函数1</h2><h2 id="TF2常用函数2"><a href="#TF2常用函数2" class="headerlink" title="TF2常用函数2"></a>TF2常用函数2</h2><h2 id="鸢尾花数据集读入"><a href="#鸢尾花数据集读入" class="headerlink" title="鸢尾花数据集读入"></a>鸢尾花数据集读入</h2><h2 id="神经网络实现鸢尾花分类"><a href="#神经网络实现鸢尾花分类" class="headerlink" title="神经网络实现鸢尾花分类"></a>神经网络实现鸢尾花分类</h2><h2 id="Tensorflow2安装"><a href="#Tensorflow2安装" class="headerlink" title="Tensorflow2安装"></a>Tensorflow2安装</h2><h2 id="Tensorflow笔记：第一讲神经网络计算"><a href="#Tensorflow笔记：第一讲神经网络计算" class="headerlink" title="Tensorflow笔记：第一讲神经网络计算"></a>Tensorflow笔记：第一讲神经网络计算</h2><h1 id="第二讲-神经网络优化"><a href="#第二讲-神经网络优化" class="headerlink" title="第二讲 神经网络优化"></a>第二讲 神经网络优化</h1><h2 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h2><h2 id="复杂度学习率"><a href="#复杂度学习率" class="headerlink" title="复杂度学习率"></a>复杂度学习率</h2><h2 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h2><h2 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h2><h2 id="缓解过拟合"><a href="#缓解过拟合" class="headerlink" title="缓解过拟合"></a>缓解过拟合</h2><h2 id="优化器"><a href="#优化器" class="headerlink" title="优化器"></a>优化器</h2><h2 id="Tensorflow笔记：第二讲神经网络优化"><a href="#Tensorflow笔记：第二讲神经网络优化" class="headerlink" title="Tensorflow笔记：第二讲神经网络优化"></a>Tensorflow笔记：第二讲神经网络优化</h2><h1 id="第三讲-神经网络八股"><a href="#第三讲-神经网络八股" class="headerlink" title="第三讲 神经网络八股"></a>第三讲 神经网络八股</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="第一讲-神经网络计算"><a href="#第一讲-神经网络计算" class="headerlink" title="第一讲 神经网络计算"></a>第一讲 神经网络计算</h1><h2 id="人工智能三学派"><a href="#人工智能三学派" class="headerlink" title="人工智能三学派"></a>人工智能三学派</h2><p>开始<a id="more"></a></p><h2 id="神经网络设计过程"><a href="#神经网络设计过程" class="headerlink" title="神经网络设计过程"></a>神经网络设计过程</h2><h2 id="张量生成"><a href="#张量生成" class="headerlink" title="张量生成"></a>张量生成</h2><h2 id="TF2常用函数1"><a href="#TF2常用函数1" class="headerlink" title="TF2常用函数1"></a>TF2常用函数1</h2><h2 id="TF2常用函数2"><a href="#TF2常用函数2" class="headerlink" title="TF2常用函数2"></a>TF2常用函数2</h2><h2 id="鸢尾花数据集读入"><a href="#鸢尾花数据集读入" class="headerlink" title="鸢尾花数据集读入"></a>鸢尾花数据集读入</h2><h2 id="神经网络实现鸢尾花分类"><a href="#神经网络实现鸢尾花分类" class="headerlink" title="神经网络实现鸢尾花分类"></a>神经网络实现鸢尾花分类</h2><h2 id="Tensorflow2安装"><a href="#Tensorflow2安装" class="headerlink" title="Tensorflow2安装"></a>Tensorflow2安装</h2><h2 id="Tensorflow笔记：第一讲神经网络计算"><a href="#Tensorflow笔记：第一讲神经网络计算" class="headerlink" title="Tensorflow笔记：第一讲神经网络计算"></a>Tensorflow笔记：第一讲神经网络计算</h2><h1 id="第二讲-神经网络优化"><a href="#第二讲-神经网络优化" class="headerlink" title="第二讲 神经网络优化"></a>第二讲 神经网络优化</h1><h2 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h2><h2 id="复杂度学习率"><a href="#复杂度学习率" class="headerlink" title="复杂度学习率"></a>复杂度学习率</h2><h2 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h2><h2 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h2><h2 id="缓解过拟合"><a href="#缓解过拟合" class="headerlink" title="缓解过拟合"></a>缓解过拟合</h2><h2 id="优化器"><a href="#优化器" class="headerlink" title="优化器"></a>优化器</h2><h2 id="Tensorflow笔记：第二讲神经网络优化"><a href="#Tensorflow笔记：第二讲神经网络优化" class="headerlink" title="Tensorflow笔记：第二讲神经网络优化"></a>Tensorflow笔记：第二讲神经网络优化</h2><h1 id="第三讲-神经网络八股"><a href="#第三讲-神经网络八股" class="headerlink" title="第三讲 神经网络八股"></a>第三讲 神经网络八股</h1>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;第一讲-神经网络计算&quot;&gt;&lt;a href=&quot;#第一讲-神经网络计算&quot; class=&quot;headerlink&quot; title=&quot;第一讲 神经网络计算&quot;&gt;&lt;/a&gt;第一讲 神经网络计算&lt;/h1&gt;&lt;h2 id=&quot;人工智能三学派&quot;&gt;&lt;a href=&quot;#人工智能三学派&quot; class
-      
+      &lt;h1 id=&quot;第一讲-神经网络计算&quot;&gt;&lt;a href=&quot;#第一讲-神经网络计算&quot; class=&quot;headerlink&quot; title=&quot;第一讲 神经网络计算&quot;&gt;&lt;/a&gt;第一讲 神经网络计算&lt;/h1&gt;&lt;h2 id=&quot;人工智能三学派&quot;&gt;&lt;a href=&quot;#人工智能三学派&quot; class=&quot;headerlink&quot; title=&quot;人工智能三学派&quot;&gt;&lt;/a&gt;人工智能三学派&lt;/h2&gt;&lt;p&gt;开始
     
     </summary>
     
