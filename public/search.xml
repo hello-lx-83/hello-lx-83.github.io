@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>《鸟哥的Linux私房菜》学习笔记</title>
+    <url>/2020/03/29/%E3%80%8A%E9%B8%9F%E5%93%A5%E7%9A%84Linux%E7%A7%81%E6%88%BF%E8%8F%9C%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="第一部分-Linux的规划与安装"><a href="#第一部分-Linux的规划与安装" class="headerlink" title="第一部分 Linux的规划与安装"></a>第一部分 Linux的规划与安装</h1><h2 id="第零章-计算机概论"><a href="#第零章-计算机概论" class="headerlink" title="第零章 计算机概论"></a>第零章 计算机概论</h2><p>开始<a id="more"></a></p>
+<h2 id="第一章-Linux是什么-如何学习"><a href="#第一章-Linux是什么-如何学习" class="headerlink" title="第一章 Linux是什么/如何学习"></a>第一章 Linux是什么/如何学习</h2><h2 id="第二章-主机规划与磁盘分区"><a href="#第二章-主机规划与磁盘分区" class="headerlink" title="第二章 主机规划与磁盘分区"></a>第二章 主机规划与磁盘分区</h2><h2 id="第三章-安装Centos7-x与多重开机技巧"><a href="#第三章-安装Centos7-x与多重开机技巧" class="headerlink" title="第三章 安装Centos7.x与多重开机技巧"></a>第三章 安装Centos7.x与多重开机技巧</h2><h2 id="第四章-首次登录与线上求助page"><a href="#第四章-首次登录与线上求助page" class="headerlink" title="第四章 首次登录与线上求助page"></a>第四章 首次登录与线上求助page</h2><hr>
+<hr>
+<h1 id="第二部分-Linux文件、目录与磁盘格式"><a href="#第二部分-Linux文件、目录与磁盘格式" class="headerlink" title="第二部分 Linux文件、目录与磁盘格式"></a>第二部分 Linux文件、目录与磁盘格式</h1><h2 id="第五章-Linux文件权限与目录配置"><a href="#第五章-Linux文件权限与目录配置" class="headerlink" title="第五章 Linux文件权限与目录配置"></a>第五章 Linux文件权限与目录配置</h2><h2 id="第六章-Linux文件与目录管理"><a href="#第六章-Linux文件与目录管理" class="headerlink" title="第六章 Linux文件与目录管理"></a>第六章 Linux文件与目录管理</h2><h2 id="第七章-Linux磁盘与文件系统管理"><a href="#第七章-Linux磁盘与文件系统管理" class="headerlink" title="第七章 Linux磁盘与文件系统管理"></a>第七章 Linux磁盘与文件系统管理</h2><h2 id="第八章-文件的压缩与打包"><a href="#第八章-文件的压缩与打包" class="headerlink" title="第八章 文件的压缩与打包"></a>第八章 文件的压缩与打包</h2><hr>
+<hr>
+<h1 id="第三部分-学习Shell与Shell-scripts"><a href="#第三部分-学习Shell与Shell-scripts" class="headerlink" title="第三部分 学习Shell与Shell scripts"></a>第三部分 学习Shell与Shell scripts</h1><h2 id="第九章-vim程序编辑器"><a href="#第九章-vim程序编辑器" class="headerlink" title="第九章 vim程序编辑器"></a>第九章 vim程序编辑器</h2><h2 id="第十章-认识与学习-BASH"><a href="#第十章-认识与学习-BASH" class="headerlink" title="第十章 认识与学习 BASH"></a>第十章 认识与学习 BASH</h2><h2 id="第十一章-正则表达式与文件格式化处理"><a href="#第十一章-正则表达式与文件格式化处理" class="headerlink" title="第十一章 正则表达式与文件格式化处理"></a>第十一章 正则表达式与文件格式化处理</h2><h2 id="第十二章-学习shell-scripts"><a href="#第十二章-学习shell-scripts" class="headerlink" title="第十二章 学习shell scripts"></a>第十二章 学习shell scripts</h2><hr>
+<hr>
+<h1 id="第四部分-Linux使用者管理"><a href="#第四部分-Linux使用者管理" class="headerlink" title="第四部分 Linux使用者管理"></a>第四部分 Linux使用者管理</h1><h1 id="第十三章-Linux-帐号管理与ACL权限控制"><a href="#第十三章-Linux-帐号管理与ACL权限控制" class="headerlink" title="第十三章 Linux 帐号管理与ACL权限控制"></a>第十三章 Linux 帐号管理与ACL权限控制</h1><h1 id="第十四章-磁盘配额（Quota）与进阶文件系统管理"><a href="#第十四章-磁盘配额（Quota）与进阶文件系统管理" class="headerlink" title="第十四章 磁盘配额（Quota）与进阶文件系统管理"></a>第十四章 磁盘配额（Quota）与进阶文件系统管理</h1><h1 id="第十五章-例行性工作调度（crontab）"><a href="#第十五章-例行性工作调度（crontab）" class="headerlink" title="第十五章 例行性工作调度（crontab）"></a>第十五章 例行性工作调度（crontab）</h1><h1 id="第十六章-程序管理与SELinux初探"><a href="#第十六章-程序管理与SELinux初探" class="headerlink" title="第十六章 程序管理与SELinux初探"></a>第十六章 程序管理与SELinux初探</h1><hr>
+<hr>
+<h1 id="第五部分-Linux系统管理员"><a href="#第五部分-Linux系统管理员" class="headerlink" title="第五部分 Linux系统管理员"></a>第五部分 Linux系统管理员</h1><h1 id="第十七章-认识系统服务（daemon）"><a href="#第十七章-认识系统服务（daemon）" class="headerlink" title="第十七章 认识系统服务（daemon）"></a>第十七章 认识系统服务（daemon）</h1><h1 id="第十八章-认识与分析登录文件"><a href="#第十八章-认识与分析登录文件" class="headerlink" title="第十八章 认识与分析登录文件"></a>第十八章 认识与分析登录文件</h1><h1 id="第十九章-开机流程、模块化管理与loader"><a href="#第十九章-开机流程、模块化管理与loader" class="headerlink" title="第十九章 开机流程、模块化管理与loader"></a>第十九章 开机流程、模块化管理与loader</h1><h1 id="第二十章-网络设置与备份策略"><a href="#第二十章-网络设置与备份策略" class="headerlink" title="第二十章 网络设置与备份策略"></a>第二十章 网络设置与备份策略</h1><h1 id="第二十一章-软件安装：-源代码与Tarball"><a href="#第二十一章-软件安装：-源代码与Tarball" class="headerlink" title="第二十一章 软件安装： 源代码与Tarball"></a>第二十一章 软件安装： 源代码与Tarball</h1><h1 id="第二十二章-软件安装：-RPM，SRP与YUM功能"><a href="#第二十二章-软件安装：-RPM，SRP与YUM功能" class="headerlink" title="第二十二章 软件安装： RPM，SRP与YUM功能"></a>第二十二章 软件安装： RPM，SRP与YUM功能</h1><h1 id="第二十三章-X-Window设置介绍"><a href="#第二十三章-X-Window设置介绍" class="headerlink" title="第二十三章 X Window设置介绍"></a>第二十三章 X Window设置介绍</h1><h1 id="第二十四章-核心编译"><a href="#第二十四章-核心编译" class="headerlink" title="第二十四章 核心编译"></a>第二十四章 核心编译</h1>]]></content>
+  </entry>
+  <entry>
     <title>从头再来可能并不是一个好的办法</title>
     <url>/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/</url>
     <content><![CDATA[<h1 id="悲惨"><a href="#悲惨" class="headerlink" title="悲惨"></a>悲惨</h1><p>其实我刚写了一大段，出问题了，然后没备份。  </p>
@@ -9,7 +23,8 @@
 <blockquote>
 <p>chown -R toughguy:toughguy *</p>
 </blockquote>
-<p>很奇怪，我把自己的东西给自己。</p>
+<p>很奇怪，我把自己的东西给自己。  </p>
+<hr>
 <p>教训：避免不加思索的重新来过。</p>
 ]]></content>
   </entry>
@@ -17,7 +32,6 @@
     <title>我的第一篇博客文章</title>
     <url>/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h2><p>  搭建了hexo，遇到了一些语言的问题，我的english好捞，已经提醒了我怎么做，可是我没有看懂，白白浪费了很多时间用来做重复的工作。好在最后弄好了。<br>  长城不是一天建成的，我建好的城墙好像每次都是建到一半，然后放弃了，岁月渐长，年久失修，痕迹退去，这也是一种浪费吧。</p>
-<hr>
 ]]></content>
   </entry>
 </search>
