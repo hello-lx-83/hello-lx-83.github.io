@@ -63,7 +63,72 @@
 </ol>
 </li>
 </ol>
-<h2 id="第一章-Linux是什么-如何学习"><a href="#第一章-Linux是什么-如何学习" class="headerlink" title="第一章 Linux是什么/如何学习"></a>第一章 Linux是什么/如何学习</h2><h2 id="第二章-主机规划与磁盘分区"><a href="#第二章-主机规划与磁盘分区" class="headerlink" title="第二章 主机规划与磁盘分区"></a>第二章 主机规划与磁盘分区</h2><h2 id="第三章-安装Centos7-x与多重开机技巧"><a href="#第三章-安装Centos7-x与多重开机技巧" class="headerlink" title="第三章 安装Centos7.x与多重开机技巧"></a>第三章 安装Centos7.x与多重开机技巧</h2><h2 id="第四章-首次登录与线上求助page"><a href="#第四章-首次登录与线上求助page" class="headerlink" title="第四章 首次登录与线上求助page"></a>第四章 首次登录与线上求助page</h2><hr>
+<hr>
+<h2 id="第一章-Linux是什么-如何学习"><a href="#第一章-Linux是什么-如何学习" class="headerlink" title="第一章 Linux是什么/如何学习"></a>第一章 Linux是什么/如何学习</h2><blockquote>
+<p>好的书本带你上天堂，坏的书本让你穷瞎忙</p>
+</blockquote>
+<ol>
+<li>主要介绍了Linux的发展历程</li>
+<li>如何学习Linux <ul>
+<li>从头学习Linux基础，基础知识是学习更深入的技巧的必备条件</li>
+<li>动手实践很重要，要增加自己的体力，就只有运动;要增加自己的知识，就是有读书;当然，要增加自己对Linux的认识，大概就只有实践了。</li>
+</ul>
+</li>
+<li>本章主要是一些了解性的内容。</li>
+</ol>
+<hr>
+<h2 id="第二章-主机规划与磁盘分区"><a href="#第二章-主机规划与磁盘分区" class="headerlink" title="第二章 主机规划与磁盘分区"></a>第二章 主机规划与磁盘分区</h2><ol>
+<li>开机流程到操作系统之前的动作<ol>
+<li>BIOS：开机主动执行的固件，会认识第一个可开机的设备（联系UEFI）</li>
+<li>MBR：第一个可开机设备的第一个扇区内的主要开机记录区块，内含开机管理程序</li>
+<li>开机管理程序（boot loader）：一只可读取核心文件来执行的软件<ul>
+<li>boot loader的主要任务：<ul>
+<li>提供菜单：使用者可以选择不同的开机项目，这也是多重开机的重要功能</li>
+<li>载入核心文件：直接指向可开机的程序区段来开始操作系统</li>
+<li>转交其他loader：将开机管理功能交给其他loader负责（这里和安装的双系统有关）  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>核心文件：开始操作系统的功能 <h2 id="第三章-安装Centos7-x与多重开机技巧"><a href="#第三章-安装Centos7-x与多重开机技巧" class="headerlink" title="第三章 安装Centos7.x与多重开机技巧"></a>第三章 安装Centos7.x与多重开机技巧</h2>省略…</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="第四章-首次登录与线上求助page"><a href="#第四章-首次登录与线上求助page" class="headerlink" title="第四章 首次登录与线上求助page"></a>第四章 首次登录与线上求助page</h2><ol>
+<li>开始下达指令<blockquote>
+<p>$ command(指令) <a href="参数">-options</a> parameter1(参数1) parameter2 …(参数2)</p>
+</blockquote>
+</li>
+<li>基础指令的操作<ol>
+<li>显示日期的指令: date</li>
+<li>显示日历的指令： cal</li>
+<li>几个重要的热键 [Tab] ,[ctr]-c,[ctr]-d  <ol>
+<li>[tab] (1)命令补全：连续按两次tab  (2)文件补全  </li>
+<li>[ctr]-c ：指令串终止  </li>
+<li>[ctr]-d ：键盘输入结束   </li>
+<li>[shift]+[pageup]|[pagedown]:用来翻页  </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>错误信息的查看</li>
+<li>Linux的线上求助man page与info page</li>
+<li>正确的关机方法<ul>
+<li>将数据同步写入硬盘中的指令：sync</li>
+<li>惯用的关机指令：shutdown</li>
+<li>重新开机,关机：reboot,halt,poweroff</li>
+</ul>
+<ol>
+<li>shutdown:<ol>
+<li>-h 将系统的服务停掉后，立马关机</li>
+<li>-r 将系统的服务停掉后，重新开机</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
 <hr>
 <h1 id="第二部分-Linux文件、目录与磁盘格式"><a href="#第二部分-Linux文件、目录与磁盘格式" class="headerlink" title="第二部分 Linux文件、目录与磁盘格式"></a>第二部分 Linux文件、目录与磁盘格式</h1><h2 id="第五章-Linux文件权限与目录配置"><a href="#第五章-Linux文件权限与目录配置" class="headerlink" title="第五章 Linux文件权限与目录配置"></a>第五章 Linux文件权限与目录配置</h2><h2 id="第六章-Linux文件与目录管理"><a href="#第六章-Linux文件与目录管理" class="headerlink" title="第六章 Linux文件与目录管理"></a>第六章 Linux文件与目录管理</h2><h2 id="第七章-Linux磁盘与文件系统管理"><a href="#第七章-Linux磁盘与文件系统管理" class="headerlink" title="第七章 Linux磁盘与文件系统管理"></a>第七章 Linux磁盘与文件系统管理</h2><h2 id="第八章-文件的压缩与打包"><a href="#第八章-文件的压缩与打包" class="headerlink" title="第八章 文件的压缩与打包"></a>第八章 文件的压缩与打包</h2><hr>
 <hr>
