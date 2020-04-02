@@ -218,8 +218,83 @@
 </li>
 </ol>
 </li>
+<li>目录的相关操作<ol>
+<li>. 代表此层目录</li>
+<li>..  代表上一层目录</li>
+<li><ul>
+<li>代表前一个工作目录</li>
+</ul>
+</li>
+<li>～ 代表目前使用者身份所在的主文件夹</li>
+<li>～account 代表account这个使用者的主文件夹</li>
 </ol>
-<h2 id="第七章-Linux磁盘与文件系统管理"><a href="#第七章-Linux磁盘与文件系统管理" class="headerlink" title="第七章 Linux磁盘与文件系统管理"></a>第七章 Linux磁盘与文件系统管理</h2><h2 id="第八章-文件的压缩与打包"><a href="#第八章-文件的压缩与打包" class="headerlink" title="第八章 文件的压缩与打包"></a>第八章 文件的压缩与打包</h2><hr>
+</li>
+<li>几个常见的处理目录的指令：<ol>
+<li>cd :变换目录</li>
+<li>pwd: 显示目前的目录</li>
+<li>mkdir: 创建一个新的目录</li>
+<li>rmdir: 删除一个空的目录 </li>
+</ol>
+</li>
+<li>关于可执行文件路径的变量：$PATH</li>
+<li>文件与目录管理<ol>
+<li>文件与目录的检视： ls</li>
+</ol>
+</li>
+<li>复制，删除与移动<ol>
+<li>cp (复制文件或目录) <blockquote>
+<p>cp 来源文件 目标文件</p>
+</blockquote>
+</li>
+<li>rm(移除文件或目录)<blockquote>
+<p>rm [-fir] 文件或目录</p>
+</blockquote>
+</li>
+<li>mv(移动文件或目录，或更名)<br>mv [-fiu] 源文件 目标文件  </li>
+</ol>
+</li>
+<li>文件内容查询 <ol>
+<li>cat 由第一行开始显示文件内容 </li>
+<li>tac 从最后一行开始显示</li>
+<li>nl 显示的时候顺便输出行号</li>
+<li>more 一页一页的显示文件内容</li>
+<li>less 与more相似，但可以往前翻页</li>
+<li>head 只看头几行</li>
+<li>tail 只看尾巴几行</li>
+<li>od 以二进制的方式读取文件内容</li>
+</ol>
+</li>
+<li>修改文件时间或创建新文件<ol>
+<li>三个时间<ul>
+<li>mtime 文件变更时间</li>
+<li>ctime 文件状态改变时间，如权限属性更改</li>
+<li>atime 文件被取用就会更新这个读取时间</li>
+</ul>
+</li>
+<li>touch [-acdmt] 文件</li>
+</ol>
+</li>
+<li>文件默认权限：umask <blockquote>
+<p>umask -S</p>
+</blockquote>
+</li>
+<li>观察文件类型：file</li>
+<li>指令与文件的搜寻<ol>
+<li>指令文件名的搜寻<ol>
+<li>which(寻找可执行文件) </li>
+</ol>
+</li>
+<li>文件文件名的搜寻<ol>
+<li>whereis(由一些特定的目录中寻找文件文件名)   </li>
+<li>locate -l 5 passd(找出系统中所有与passwd有关的文件名，且只列出5个)</li>
+<li>updatedb (更新数据库)</li>
+<li>find()<h2 id="第七章-Linux磁盘与文件系统管理"><a href="#第七章-Linux磁盘与文件系统管理" class="headerlink" title="第七章 Linux磁盘与文件系统管理"></a>第七章 Linux磁盘与文件系统管理</h2><h2 id="第八章-文件的压缩与打包"><a href="#第八章-文件的压缩与打包" class="headerlink" title="第八章 文件的压缩与打包"></a>第八章 文件的压缩与打包</h2></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
 <hr>
 <h1 id="第三部分-学习Shell与Shell-scripts"><a href="#第三部分-学习Shell与Shell-scripts" class="headerlink" title="第三部分 学习Shell与Shell scripts"></a>第三部分 学习Shell与Shell scripts</h1><h2 id="第九章-vim程序编辑器"><a href="#第九章-vim程序编辑器" class="headerlink" title="第九章 vim程序编辑器"></a>第九章 vim程序编辑器</h2><h2 id="第十章-认识与学习-BASH"><a href="#第十章-认识与学习-BASH" class="headerlink" title="第十章 认识与学习 BASH"></a>第十章 认识与学习 BASH</h2><h2 id="第十一章-正则表达式与文件格式化处理"><a href="#第十一章-正则表达式与文件格式化处理" class="headerlink" title="第十一章 正则表达式与文件格式化处理"></a>第十一章 正则表达式与文件格式化处理</h2><h2 id="第十二章-学习shell-scripts"><a href="#第十二章-学习shell-scripts" class="headerlink" title="第十二章 学习shell scripts"></a>第十二章 学习shell scripts</h2><hr>
 <hr>
