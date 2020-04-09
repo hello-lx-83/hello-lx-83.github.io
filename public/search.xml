@@ -1,325 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>《人工智能实践：Tensorflow笔记 》学习笔记</title>
-    <url>/2020/03/29/%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E8%B7%B5%EF%BC%9ATensorflow%E7%AC%94%E8%AE%B0%20%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="第一讲-神经网络计算"><a href="#第一讲-神经网络计算" class="headerlink" title="第一讲 神经网络计算"></a>第一讲 神经网络计算</h1><h2 id="人工智能三学派"><a href="#人工智能三学派" class="headerlink" title="人工智能三学派"></a>人工智能三学派</h2><p>开始<a id="more"></a></p>
-<h2 id="神经网络设计过程"><a href="#神经网络设计过程" class="headerlink" title="神经网络设计过程"></a>神经网络设计过程</h2><h2 id="张量生成"><a href="#张量生成" class="headerlink" title="张量生成"></a>张量生成</h2><h2 id="TF2常用函数1"><a href="#TF2常用函数1" class="headerlink" title="TF2常用函数1"></a>TF2常用函数1</h2><h2 id="TF2常用函数2"><a href="#TF2常用函数2" class="headerlink" title="TF2常用函数2"></a>TF2常用函数2</h2><h2 id="鸢尾花数据集读入"><a href="#鸢尾花数据集读入" class="headerlink" title="鸢尾花数据集读入"></a>鸢尾花数据集读入</h2><h2 id="神经网络实现鸢尾花分类"><a href="#神经网络实现鸢尾花分类" class="headerlink" title="神经网络实现鸢尾花分类"></a>神经网络实现鸢尾花分类</h2><h2 id="Tensorflow2安装"><a href="#Tensorflow2安装" class="headerlink" title="Tensorflow2安装"></a>Tensorflow2安装</h2><h2 id="Tensorflow笔记：第一讲神经网络计算"><a href="#Tensorflow笔记：第一讲神经网络计算" class="headerlink" title="Tensorflow笔记：第一讲神经网络计算"></a>Tensorflow笔记：第一讲神经网络计算</h2><h1 id="第二讲-神经网络优化"><a href="#第二讲-神经网络优化" class="headerlink" title="第二讲 神经网络优化"></a>第二讲 神经网络优化</h1><h2 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h2><h2 id="复杂度学习率"><a href="#复杂度学习率" class="headerlink" title="复杂度学习率"></a>复杂度学习率</h2><h2 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h2><h2 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h2><h2 id="缓解过拟合"><a href="#缓解过拟合" class="headerlink" title="缓解过拟合"></a>缓解过拟合</h2><h2 id="优化器"><a href="#优化器" class="headerlink" title="优化器"></a>优化器</h2><h2 id="Tensorflow笔记：第二讲神经网络优化"><a href="#Tensorflow笔记：第二讲神经网络优化" class="headerlink" title="Tensorflow笔记：第二讲神经网络优化"></a>Tensorflow笔记：第二讲神经网络优化</h2><h1 id="第三讲-神经网络八股"><a href="#第三讲-神经网络八股" class="headerlink" title="第三讲 神经网络八股"></a>第三讲 神经网络八股</h1>]]></content>
-  </entry>
-  <entry>
-    <title>《鸟哥的Linux私房菜》学习笔记</title>
-    <url>/2020/03/29/%E3%80%8A%E9%B8%9F%E5%93%A5%E7%9A%84Linux%E7%A7%81%E6%88%BF%E8%8F%9C%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="第一部分-Linux的规划与安装"><a href="#第一部分-Linux的规划与安装" class="headerlink" title="第一部分 Linux的规划与安装"></a>第一部分 Linux的规划与安装</h1><h2 id="第零章-计算机概论"><a href="#第零章-计算机概论" class="headerlink" title="第零章 计算机概论"></a>第零章 计算机概论</h2><a id="more"></a> 
-<ul>
-<li>如果想要Linux帮我做好我想要达成的工作，则Linux的学习并不是只要“会用就好”  </li>
-</ul>
-<hr>
-<ol>
-<li>计算机：接受使用者输入指令与数据，经由中央处理器的数字与逻辑单元运算处理后，以产生或存储成有用的信息。</li>
-<li>计算机硬件的五大单元：包括输入单元，cpu内部的控制单元，算数逻辑单元，内存，输出单元。<strong>其中，cpu和内存的关系划重点</strong>。  <ol>
-<li>cpu的架构  <ul>
-<li>精简指令集（RISC）</li>
-<li>复杂指令及（CISC）</li>
-</ul>
-</li>
-<li>运行流程  <ul>
-<li>cpu（大脑）,内存（此刻），硬盘（回忆），主板（神经系统），周边设备（与外界互动），电源供应器（心脏）</li>
-</ul>
-</li>
-<li>常用计算单位  <ul>
-<li>1 Byte = 8bits</li>
-</ul>
-</li>
-<li>cpu的工作频率（cpu每秒可以进行的工作次数）：外频与倍频（与缓冲区的概念相关）  </li>
-<li>32位与64位的cpu与总线宽度</li>
-<li>内存<ul>
-<li>动态随机存取内存（DRAM）：只有通电时才能记录与使用，断电后数据就消失了;  DDR（双倍数据传送速度）：可以在一次工作周期中完成两次数据传送。  </li>
-<li>多通道设计：传统总线宽度一般是64位，将两条64位的内存汇整在一起，就可以达到128位，这是双通道的设计。  </li>
-<li>静态随机存取内存（SRAM）：高性能，速度快，一般用作高速缓存</li>
-<li>只读存储器（ROM）非挥发性内存，没有通电也能将数据记录下来</li>
-<li>BIOS</li>
-</ul>
-</li>
-<li>显卡（VGA）：和图像影像显示相关<ul>
-<li>GPU：图像处理器，在显卡上嵌入一个加速芯片</li>
-<li>HDMI 可以同时传送影像与声音</li>
-</ul>
-</li>
-<li>硬盘与存储设备<ul>
-<li>SSD（固态硬盘）</li>
-</ul>
-</li>
-<li>主板<ul>
-<li>CMOS：主要功能，记录主板上面的重要参数</li>
-<li>BIOS：写入主板上面的程序，可以在开机的时候执行，以载入CMOS中的参数，并尝试调用存储设备中的开机程序，进一步进入操作系统中。BIOS也可以修改CMOS中的数据，每种主板调用BIOS设置程序的按键不同，详情百度。  </li>
-</ul>
-</li>
-</ol>
-</li>
-<li>软件程序运行:没有软件的计算机只是一堆废铁<ol>
-<li>操作系统:其实也是一组程序，这组程序的重点在于管理电脑的所有活动以及驱动系统中的所有硬件。</li>
-<li>系统调用：为了让程序员比较容易开发软件，操作系统除了核心程序外，通常还会提供一整组开发接口，即系统调用层</li>
-<li>核心功能：系统调用接口，程序管理，内存管理，文件系统管理，设备的驱动  </li>
-</ol>
-</li>
-</ol>
-<hr>
-<h2 id="第一章-Linux是什么-如何学习"><a href="#第一章-Linux是什么-如何学习" class="headerlink" title="第一章 Linux是什么/如何学习"></a>第一章 Linux是什么/如何学习</h2><blockquote>
-<p>好的书本带你上天堂，坏的书本让你穷瞎忙</p>
-</blockquote>
-<ol>
-<li>主要介绍了Linux的发展历程</li>
-<li>如何学习Linux <ul>
-<li>从头学习Linux基础，基础知识是学习更深入的技巧的必备条件</li>
-<li>动手实践很重要，要增加自己的体力，就只有运动;要增加自己的知识，就是有读书;当然，要增加自己对Linux的认识，大概就只有实践了。</li>
-</ul>
-</li>
-<li>本章主要是一些了解性的内容。</li>
-</ol>
-<hr>
-<h2 id="第二章-主机规划与磁盘分区"><a href="#第二章-主机规划与磁盘分区" class="headerlink" title="第二章 主机规划与磁盘分区"></a>第二章 主机规划与磁盘分区</h2><ol>
-<li>开机流程到操作系统之前的动作<ol>
-<li>BIOS：开机主动执行的固件，会认识第一个可开机的设备（联系UEFI）</li>
-<li>MBR：第一个可开机设备的第一个扇区内的主要开机记录区块，内含开机管理程序</li>
-<li>开机管理程序（boot loader）：一只可读取核心文件来执行的软件<ul>
-<li>boot loader的主要任务：<ul>
-<li>提供菜单：使用者可以选择不同的开机项目，这也是多重开机的重要功能</li>
-<li>载入核心文件：直接指向可开机的程序区段来开始操作系统</li>
-<li>转交其他loader：将开机管理功能交给其他loader负责（这里和安装的双系统有关）  </li>
-</ul>
-</li>
-</ul>
-</li>
-<li>核心文件：开始操作系统的功能 </li>
-</ol>
-</li>
-</ol>
-<hr>
-<h2 id="第三章-安装Centos7-x与多重开机技巧"><a href="#第三章-安装Centos7-x与多重开机技巧" class="headerlink" title="第三章 安装Centos7.x与多重开机技巧"></a>第三章 安装Centos7.x与多重开机技巧</h2><h2 id="省略…"><a href="#省略…" class="headerlink" title="省略…"></a>省略…</h2><h2 id="第四章-首次登录与线上求助page"><a href="#第四章-首次登录与线上求助page" class="headerlink" title="第四章 首次登录与线上求助page"></a>第四章 首次登录与线上求助page</h2><ol>
-<li>开始下达指令<blockquote>
-<p>$ command(指令) <a href="参数">-options</a> parameter1(参数1) parameter2 …(参数2)</p>
-</blockquote>
-</li>
-<li>基础指令的操作<ol>
-<li>显示日期的指令: date</li>
-<li>显示日历的指令： cal</li>
-<li>几个重要的热键 [Tab] ,[ctr]-c,[ctr]-d  <ol>
-<li>[tab] (1)命令补全：连续按两次tab  (2)文件补全  </li>
-<li>[ctr]-c ：指令串终止  </li>
-<li>[ctr]-d ：键盘输入结束   </li>
-<li>[shift]+[pageup]|[pagedown]:用来翻页  </li>
-</ol>
-</li>
-</ol>
-</li>
-<li>错误信息的查看</li>
-<li>Linux的线上求助man page与info page</li>
-<li>正确的关机方法<ul>
-<li>将数据同步写入硬盘中的指令：sync</li>
-<li>惯用的关机指令：shutdown</li>
-<li>重新开机,关机：reboot,halt,poweroff</li>
-</ul>
-<ol>
-<li>shutdown:<ol>
-<li>-h 将系统的服务停掉后，立马关机</li>
-<li>-r 将系统的服务停掉后，重新开机</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<hr>
-<hr>
-<h1 id="第二部分-Linux文件、目录与磁盘格式"><a href="#第二部分-Linux文件、目录与磁盘格式" class="headerlink" title="第二部分 Linux文件、目录与磁盘格式"></a>第二部分 Linux文件、目录与磁盘格式</h1><h2 id="第五章-Linux文件权限与目录配置"><a href="#第五章-Linux文件权限与目录配置" class="headerlink" title="第五章 Linux文件权限与目录配置"></a>第五章 Linux文件权限与目录配置</h2><ol>
-<li>Linux一般将文件可存取的身份分为三个类别，分别是：owner/group/others,且三种身份各有read/write/execute等权限</li>
-<li>文件拥有者，群组，其他人的概念</li>
-<li>Linux文件权限的概念<ol>
-<li>Linux文件属性<blockquote>
-<p>-rw-r–r–. 1 root root 1864 May 4 18:01 initial-setup-ks.cfg<br>（档案类型权限）（连接数）（档案拥有者）（档案所属群组）（档案最后被修改的时间）（档案名）</p>
-<ol start="2">
-<li><blockquote>
-<p>-rwxrwx—<br>(档案拥有者权限)(档案所属群组权限)(其他人权限)</p>
-</blockquote>
-</li>
-</ol>
-</blockquote>
-<ul>
-<li>d 代表目录</li>
-<li>[-]表示文件</li>
-<li>[i]表示链接文件</li>
-<li>[b]设备文件里面的可供存储的周边设备</li>
-<li>[c]设备文件里的序列设备，如键盘，鼠标<ol start="3">
-<li>Linux文件权限的重要性</li>
-<li>如何改变文件属性和权限</li>
-<li>常用指令<blockquote>
-<p>chgrp:改变文件所属群组<br>chown:改变文件拥有者<br>chmod:改变文件的权限，SUID，SGID，SBIT等特性</p>
-</blockquote>
-</li>
-<li>改变所属群组，chgrp<blockquote>
-<p>chgrp [-R] dirname/filename …选项与参数<br>chgrp users initial-setup-ks.cfg #改变所属群组为users</p>
-</blockquote>
-</li>
-<li>改变文件拥有者，chown<blockquote>
-<p>chown [-R] 帐号名称 文件或目录<br>chown [-R] 帐号名称：群组名称 文件或目录<br>chown bin initial-setup-ks.cfg<br>ls -l<br>-rw-r–r–. 1 bin users 1864 initial-setup-ks<br>将initial-setup-ks.cfg的拥有者改回为root<br>chown root:root initial-setup-ks.cfg  </p>
-</blockquote>
-<ol>
-<li>什么时候需要改变文件的群组与拥有者？<ul>
-<li>复制文件给你之外的其他人时<blockquote>
-<p>cp 来源文件 目标文件(cp 会复制执行者的属性和权限，复制给其他用户就需要修改权限才能使用)</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>改变权限 chmod<ol>
-<li>有两种方法，分别可以采用使用数字或者是符号来进行权限的变更</li>
-<li>数字类型改变文件权限<ol>
-<li>r:4</li>
-<li>w:2</li>
-<li>x:1<blockquote>
-<p>chmod [-R] xyz 文件或目录<br>chmod 777 .bashrc<br>ls -l<br>-rwxrwxrwx.1 root root 2013 .bashrc</p>
-</blockquote>
-</li>
-<li>不想让其他人看到： 740</li>
-</ol>
-</li>
-<li>符号类型改变文件权限<ol>
-<li>user - u</li>
-<li>group -g</li>
-<li>others - o</li>
-<li>假如我们要设置一个文件权限为 “-rwxr-xr-x“<blockquote>
-<p>chmod u=rwx,go=rx .bashrc  </p>
-</blockquote>
-</li>
-<li>假如设置文件权限为 ”-rwxr-xr–“<blockquote>
-<p>chmod u=rwx,g=rx,o=r .bashrc</p>
-</blockquote>
-</li>
-<li>将权限去掉，而不变更其他已存在的权限,比如拿掉全部人的执行权限<blockquote>
-<p>chmod a-x .bashrc    </p>
-</blockquote>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>目录与文件的权限意义：<strong>注意目录的执行的权利设置</strong> </li>
-<li>Linux目录配置的依据–FHS  <ul>
-<li>/(root,根目录)：与开机系统相关</li>
-<li>/usr(unix software resource):与软件安装/执行相关</li>
-<li>/var(variable):与系统运行过程有关</li>
-</ul>
-</li>
-<li>绝对路径与相对路径  <h2 id="第六章-Linux文件与目录管理"><a href="#第六章-Linux文件与目录管理" class="headerlink" title="第六章 Linux文件与目录管理"></a>第六章 Linux文件与目录管理</h2></li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>目录的相关操作<ol>
-<li>. 代表此层目录</li>
-<li>..  代表上一层目录</li>
-<li><ul>
-<li>代表前一个工作目录</li>
-</ul>
-</li>
-<li>～ 代表目前使用者身份所在的主文件夹</li>
-<li>～account 代表account这个使用者的主文件夹</li>
-</ol>
-</li>
-<li>几个常见的处理目录的指令：<ol>
-<li>cd :变换目录</li>
-<li>pwd: 显示目前的目录</li>
-<li>mkdir: 创建一个新的目录</li>
-<li>rmdir: 删除一个空的目录 </li>
-</ol>
-</li>
-<li>关于可执行文件路径的变量：$PATH</li>
-<li>文件与目录管理<ol>
-<li>文件与目录的检视： ls</li>
-</ol>
-</li>
-<li>复制，删除与移动<ol>
-<li>cp (复制文件或目录) <blockquote>
-<p>cp 来源文件 目标文件</p>
-</blockquote>
-</li>
-<li>rm(移除文件或目录)<blockquote>
-<p>rm [-fir] 文件或目录</p>
-</blockquote>
-</li>
-<li>mv(移动文件或目录，或更名)<br>mv [-fiu] 源文件 目标文件  </li>
-</ol>
-</li>
-<li>文件内容查询 <ol>
-<li>cat 由第一行开始显示文件内容 </li>
-<li>tac 从最后一行开始显示</li>
-<li>nl 显示的时候顺便输出行号</li>
-<li>more 一页一页的显示文件内容</li>
-<li>less 与more相似，但可以往前翻页</li>
-<li>head 只看头几行</li>
-<li>tail 只看尾巴几行</li>
-<li>od 以二进制的方式读取文件内容</li>
-</ol>
-</li>
-<li>修改文件时间或创建新文件<ol>
-<li>三个时间<ul>
-<li>mtime 文件变更时间</li>
-<li>ctime 文件状态改变时间，如权限属性更改</li>
-<li>atime 文件被取用就会更新这个读取时间</li>
-</ul>
-</li>
-<li>touch [-acdmt] 文件</li>
-</ol>
-</li>
-<li>文件默认权限：umask <blockquote>
-<p>umask -S</p>
-</blockquote>
-</li>
-<li>观察文件类型：file</li>
-<li>指令与文件的搜寻<ol>
-<li>指令文件名的搜寻<ol>
-<li>which(寻找可执行文件) </li>
-</ol>
-</li>
-<li>文件文件名的搜寻<ol>
-<li>whereis(由一些特定的目录中寻找文件文件名)   </li>
-<li>locate -l 5 passd(找出系统中所有与passwd有关的文件名，且只列出5个)</li>
-<li>updatedb (更新数据库)</li>
-<li>find()<h2 id="第七章-Linux磁盘与文件系统管理"><a href="#第七章-Linux磁盘与文件系统管理" class="headerlink" title="第七章 Linux磁盘与文件系统管理"></a>第七章 Linux磁盘与文件系统管理</h2><h2 id="第八章-文件的压缩与打包"><a href="#第八章-文件的压缩与打包" class="headerlink" title="第八章 文件的压缩与打包"></a>第八章 文件的压缩与打包</h2></li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<hr>
-<hr>
-<h1 id="第三部分-学习Shell与Shell-scripts"><a href="#第三部分-学习Shell与Shell-scripts" class="headerlink" title="第三部分 学习Shell与Shell scripts"></a>第三部分 学习Shell与Shell scripts</h1><h2 id="第九章-vim程序编辑器"><a href="#第九章-vim程序编辑器" class="headerlink" title="第九章 vim程序编辑器"></a>第九章 vim程序编辑器</h2><h2 id="第十章-认识与学习-BASH"><a href="#第十章-认识与学习-BASH" class="headerlink" title="第十章 认识与学习 BASH"></a>第十章 认识与学习 BASH</h2><h2 id="第十一章-正则表达式与文件格式化处理"><a href="#第十一章-正则表达式与文件格式化处理" class="headerlink" title="第十一章 正则表达式与文件格式化处理"></a>第十一章 正则表达式与文件格式化处理</h2><h2 id="第十二章-学习shell-scripts"><a href="#第十二章-学习shell-scripts" class="headerlink" title="第十二章 学习shell scripts"></a>第十二章 学习shell scripts</h2><hr>
-<hr>
-<h1 id="第四部分-Linux使用者管理"><a href="#第四部分-Linux使用者管理" class="headerlink" title="第四部分 Linux使用者管理"></a>第四部分 Linux使用者管理</h1><h2 id="第十三章-Linux-帐号管理与ACL权限控制"><a href="#第十三章-Linux-帐号管理与ACL权限控制" class="headerlink" title="第十三章 Linux 帐号管理与ACL权限控制"></a>第十三章 Linux 帐号管理与ACL权限控制</h2><h2 id="第十四章-磁盘配额（Quota）与进阶文件系统管理"><a href="#第十四章-磁盘配额（Quota）与进阶文件系统管理" class="headerlink" title="第十四章 磁盘配额（Quota）与进阶文件系统管理"></a>第十四章 磁盘配额（Quota）与进阶文件系统管理</h2><h2 id="第十五章-例行性工作调度（crontab）"><a href="#第十五章-例行性工作调度（crontab）" class="headerlink" title="第十五章 例行性工作调度（crontab）"></a>第十五章 例行性工作调度（crontab）</h2><h2 id="第十六章-程序管理与SELinux初探"><a href="#第十六章-程序管理与SELinux初探" class="headerlink" title="第十六章 程序管理与SELinux初探"></a>第十六章 程序管理与SELinux初探</h2><hr>
-<hr>
-<h1 id="第五部分-Linux系统管理员"><a href="#第五部分-Linux系统管理员" class="headerlink" title="第五部分 Linux系统管理员"></a>第五部分 Linux系统管理员</h1><h2 id="第十七章-认识系统服务（daemon）"><a href="#第十七章-认识系统服务（daemon）" class="headerlink" title="第十七章 认识系统服务（daemon）"></a>第十七章 认识系统服务（daemon）</h2><h2 id="第十八章-认识与分析登录文件"><a href="#第十八章-认识与分析登录文件" class="headerlink" title="第十八章 认识与分析登录文件"></a>第十八章 认识与分析登录文件</h2><h2 id="第十九章-开机流程、模块化管理与loader"><a href="#第十九章-开机流程、模块化管理与loader" class="headerlink" title="第十九章 开机流程、模块化管理与loader"></a>第十九章 开机流程、模块化管理与loader</h2><h2 id="第二十章-网络设置与备份策略"><a href="#第二十章-网络设置与备份策略" class="headerlink" title="第二十章 网络设置与备份策略"></a>第二十章 网络设置与备份策略</h2><h2 id="第二十一章-软件安装：-源代码与Tarball"><a href="#第二十一章-软件安装：-源代码与Tarball" class="headerlink" title="第二十一章 软件安装： 源代码与Tarball"></a>第二十一章 软件安装： 源代码与Tarball</h2><h2 id="第二十二章-软件安装：-RPM，SRP与YUM功能"><a href="#第二十二章-软件安装：-RPM，SRP与YUM功能" class="headerlink" title="第二十二章 软件安装： RPM，SRP与YUM功能"></a>第二十二章 软件安装： RPM，SRP与YUM功能</h2><h2 id="第二十三章-X-Window设置介绍"><a href="#第二十三章-X-Window设置介绍" class="headerlink" title="第二十三章 X Window设置介绍"></a>第二十三章 X Window设置介绍</h2><h2 id="第二十四章-核心编译"><a href="#第二十四章-核心编译" class="headerlink" title="第二十四章 核心编译"></a>第二十四章 核心编译</h2>]]></content>
-  </entry>
-  <entry>
-    <title>从头再来可能并不是一个好的办法</title>
-    <url>/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="悲惨"><a href="#悲惨" class="headerlink" title="悲惨"></a>悲惨</h1><p>其实我刚写了一大段，出问题了，然后没备份。  </p>
-<hr>
-<p>大概就是：<br>起因：今天不知道<strong>linux</strong>给某一个文件夹的拥有赋给另外一个用户，从<strong>root</strong>用户到我自己，觉得问题出在我是一路用的是<strong>root</strong>用户创建的博客，想要重新来过，重新开始了一段距离，这样好浪费时间啊，于是继续找怎么弄。<br>终于：  </p>
-<blockquote>
-<p>chown -R toughguy:toughguy *</p>
-</blockquote>
-<p>很奇怪，我把自己的东西给自己。  </p>
-<hr>
-<p>教训：避免不加思索的重新来过。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的第一篇博客文章</title>
-    <url>/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h2><p>  搭建了hexo，遇到了一些语言的问题，我的english好捞，已经提醒了我怎么做，可是我没有看懂，白白浪费了很多时间用来做重复的工作。好在最后弄好了。<br>  长城不是一天建成的，我建好的城墙好像每次都是建到一半，然后放弃了，岁月渐长，年久失修，痕迹退去，这也是一种浪费吧。</p>
-]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>snap占用/dev/loop0-/dev/loop11占用100%</title>
+      <link href="/2020/04/09/snap%E5%8D%A0%E7%94%A8/dev/loop0-/dev/loop11%E5%8D%A0%E7%94%A8100%25/"/>
+      <url>/2020/04/09/snap%E5%8D%A0%E7%94%A8/dev/loop0-/dev/loop11%E5%8D%A0%E7%94%A8100%25/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>命令:<br>sudo apt autoremove –purge snapd</p></blockquote><p>不清楚为什么这么做，后面看完书再写原因。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>不想学习的时候</title>
+      <link href="/2020/04/09/%E4%B8%8D%E6%83%B3%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%97%B6%E5%80%99/"/>
+      <url>/2020/04/09/%E4%B8%8D%E6%83%B3%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%97%B6%E5%80%99/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Actuallly-没有心思继续学习"><a href="#Actuallly-没有心思继续学习" class="headerlink" title="Actuallly,没有心思继续学习"></a>Actuallly,没有心思继续学习</h1><p>陷入了学习的困境，或许我应该去看一下有可持续发展的内容，然后学习一下可持续学习。</p><p>from 渔夫不打鱼</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《人工智能实践：Tensorflow笔记 》学习笔记</title>
+      <link href="/2020/03/29/%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E8%B7%B5%EF%BC%9ATensorflow%E7%AC%94%E8%AE%B0%20%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/03/29/%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E8%B7%B5%EF%BC%9ATensorflow%E7%AC%94%E8%AE%B0%20%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一讲-神经网络计算"><a href="#第一讲-神经网络计算" class="headerlink" title="第一讲 神经网络计算"></a>第一讲 神经网络计算</h1><h2 id="人工智能三学派"><a href="#人工智能三学派" class="headerlink" title="人工智能三学派"></a>人工智能三学派</h2><p>开始<a id="more"></a></p><h2 id="神经网络设计过程"><a href="#神经网络设计过程" class="headerlink" title="神经网络设计过程"></a>神经网络设计过程</h2><h2 id="张量生成"><a href="#张量生成" class="headerlink" title="张量生成"></a>张量生成</h2><h2 id="TF2常用函数1"><a href="#TF2常用函数1" class="headerlink" title="TF2常用函数1"></a>TF2常用函数1</h2><h2 id="TF2常用函数2"><a href="#TF2常用函数2" class="headerlink" title="TF2常用函数2"></a>TF2常用函数2</h2><h2 id="鸢尾花数据集读入"><a href="#鸢尾花数据集读入" class="headerlink" title="鸢尾花数据集读入"></a>鸢尾花数据集读入</h2><h2 id="神经网络实现鸢尾花分类"><a href="#神经网络实现鸢尾花分类" class="headerlink" title="神经网络实现鸢尾花分类"></a>神经网络实现鸢尾花分类</h2><h2 id="Tensorflow2安装"><a href="#Tensorflow2安装" class="headerlink" title="Tensorflow2安装"></a>Tensorflow2安装</h2><h2 id="Tensorflow笔记：第一讲神经网络计算"><a href="#Tensorflow笔记：第一讲神经网络计算" class="headerlink" title="Tensorflow笔记：第一讲神经网络计算"></a>Tensorflow笔记：第一讲神经网络计算</h2><h1 id="第二讲-神经网络优化"><a href="#第二讲-神经网络优化" class="headerlink" title="第二讲 神经网络优化"></a>第二讲 神经网络优化</h1><h2 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h2><h2 id="复杂度学习率"><a href="#复杂度学习率" class="headerlink" title="复杂度学习率"></a>复杂度学习率</h2><h2 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h2><h2 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h2><h2 id="缓解过拟合"><a href="#缓解过拟合" class="headerlink" title="缓解过拟合"></a>缓解过拟合</h2><h2 id="优化器"><a href="#优化器" class="headerlink" title="优化器"></a>优化器</h2><h2 id="Tensorflow笔记：第二讲神经网络优化"><a href="#Tensorflow笔记：第二讲神经网络优化" class="headerlink" title="Tensorflow笔记：第二讲神经网络优化"></a>Tensorflow笔记：第二讲神经网络优化</h2><h1 id="第三讲-神经网络八股"><a href="#第三讲-神经网络八股" class="headerlink" title="第三讲 神经网络八股"></a>第三讲 神经网络八股</h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《鸟哥的Linux私房菜》学习笔记</title>
+      <link href="/2020/03/29/%E3%80%8A%E9%B8%9F%E5%93%A5%E7%9A%84Linux%E7%A7%81%E6%88%BF%E8%8F%9C%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/03/29/%E3%80%8A%E9%B8%9F%E5%93%A5%E7%9A%84Linux%E7%A7%81%E6%88%BF%E8%8F%9C%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一部分-Linux的规划与安装"><a href="#第一部分-Linux的规划与安装" class="headerlink" title="第一部分 Linux的规划与安装"></a>第一部分 Linux的规划与安装</h1><h2 id="第零章-计算机概论"><a href="#第零章-计算机概论" class="headerlink" title="第零章 计算机概论"></a>第零章 计算机概论</h2><a id="more"></a> <ul><li>如果想要Linux帮我做好我想要达成的工作，则Linux的学习并不是只要“会用就好”  </li></ul><hr><ol><li>计算机：接受使用者输入指令与数据，经由中央处理器的数字与逻辑单元运算处理后，以产生或存储成有用的信息。</li><li>计算机硬件的五大单元：包括输入单元，cpu内部的控制单元，算数逻辑单元，内存，输出单元。<strong>其中，cpu和内存的关系划重点</strong>。  <ol><li>cpu的架构  <ul><li>精简指令集（RISC）</li><li>复杂指令及（CISC）</li></ul></li><li>运行流程  <ul><li>cpu（大脑）,内存（此刻），硬盘（回忆），主板（神经系统），周边设备（与外界互动），电源供应器（心脏）</li></ul></li><li>常用计算单位  <ul><li>1 Byte = 8bits</li></ul></li><li>cpu的工作频率（cpu每秒可以进行的工作次数）：外频与倍频（与缓冲区的概念相关）  </li><li>32位与64位的cpu与总线宽度</li><li>内存<ul><li>动态随机存取内存（DRAM）：只有通电时才能记录与使用，断电后数据就消失了;  DDR（双倍数据传送速度）：可以在一次工作周期中完成两次数据传送。  </li><li>多通道设计：传统总线宽度一般是64位，将两条64位的内存汇整在一起，就可以达到128位，这是双通道的设计。  </li><li>静态随机存取内存（SRAM）：高性能，速度快，一般用作高速缓存</li><li>只读存储器（ROM）非挥发性内存，没有通电也能将数据记录下来</li><li>BIOS</li></ul></li><li>显卡（VGA）：和图像影像显示相关<ul><li>GPU：图像处理器，在显卡上嵌入一个加速芯片</li><li>HDMI 可以同时传送影像与声音</li></ul></li><li>硬盘与存储设备<ul><li>SSD（固态硬盘）</li></ul></li><li>主板<ul><li>CMOS：主要功能，记录主板上面的重要参数</li><li>BIOS：写入主板上面的程序，可以在开机的时候执行，以载入CMOS中的参数，并尝试调用存储设备中的开机程序，进一步进入操作系统中。BIOS也可以修改CMOS中的数据，每种主板调用BIOS设置程序的按键不同，详情百度。  </li></ul></li></ol></li><li>软件程序运行:没有软件的计算机只是一堆废铁<ol><li>操作系统:其实也是一组程序，这组程序的重点在于管理电脑的所有活动以及驱动系统中的所有硬件。</li><li>系统调用：为了让程序员比较容易开发软件，操作系统除了核心程序外，通常还会提供一整组开发接口，即系统调用层</li><li>核心功能：系统调用接口，程序管理，内存管理，文件系统管理，设备的驱动  </li></ol></li></ol><hr><h2 id="第一章-Linux是什么-如何学习"><a href="#第一章-Linux是什么-如何学习" class="headerlink" title="第一章 Linux是什么/如何学习"></a>第一章 Linux是什么/如何学习</h2><blockquote><p>好的书本带你上天堂，坏的书本让你穷瞎忙</p></blockquote><ol><li>主要介绍了Linux的发展历程</li><li>如何学习Linux <ul><li>从头学习Linux基础，基础知识是学习更深入的技巧的必备条件</li><li>动手实践很重要，要增加自己的体力，就只有运动;要增加自己的知识，就是有读书;当然，要增加自己对Linux的认识，大概就只有实践了。</li></ul></li><li>本章主要是一些了解性的内容。</li></ol><hr><h2 id="第二章-主机规划与磁盘分区"><a href="#第二章-主机规划与磁盘分区" class="headerlink" title="第二章 主机规划与磁盘分区"></a>第二章 主机规划与磁盘分区</h2><ol><li>开机流程到操作系统之前的动作<ol><li>BIOS：开机主动执行的固件，会认识第一个可开机的设备（联系UEFI）</li><li>MBR：第一个可开机设备的第一个扇区内的主要开机记录区块，内含开机管理程序</li><li>开机管理程序（boot loader）：一只可读取核心文件来执行的软件<ul><li>boot loader的主要任务：<ul><li>提供菜单：使用者可以选择不同的开机项目，这也是多重开机的重要功能</li><li>载入核心文件：直接指向可开机的程序区段来开始操作系统</li><li>转交其他loader：将开机管理功能交给其他loader负责（这里和安装的双系统有关）  </li></ul></li></ul></li><li>核心文件：开始操作系统的功能 </li></ol></li></ol><hr><h2 id="第三章-安装Centos7-x与多重开机技巧"><a href="#第三章-安装Centos7-x与多重开机技巧" class="headerlink" title="第三章 安装Centos7.x与多重开机技巧"></a>第三章 安装Centos7.x与多重开机技巧</h2><h2 id="省略…"><a href="#省略…" class="headerlink" title="省略…"></a>省略…</h2><h2 id="第四章-首次登录与线上求助page"><a href="#第四章-首次登录与线上求助page" class="headerlink" title="第四章 首次登录与线上求助page"></a>第四章 首次登录与线上求助page</h2><ol><li>开始下达指令<blockquote><p>$ command(指令) <a href="参数">-options</a> parameter1(参数1) parameter2 …(参数2)</p></blockquote></li><li>基础指令的操作<ol><li>显示日期的指令: date</li><li>显示日历的指令： cal</li><li>几个重要的热键 [Tab] ,[ctr]-c,[ctr]-d  <ol><li>[tab] (1)命令补全：连续按两次tab  (2)文件补全  </li><li>[ctr]-c ：指令串终止  </li><li>[ctr]-d ：键盘输入结束   </li><li>[shift]+[pageup]|[pagedown]:用来翻页  </li></ol></li></ol></li><li>错误信息的查看</li><li>Linux的线上求助man page与info page</li><li>正确的关机方法<ul><li>将数据同步写入硬盘中的指令：sync</li><li>惯用的关机指令：shutdown</li><li>重新开机,关机：reboot,halt,poweroff</li></ul><ol><li>shutdown:<ol><li>-h 将系统的服务停掉后，立马关机</li><li>-r 将系统的服务停掉后，重新开机</li></ol></li></ol></li></ol><hr><hr><h1 id="第二部分-Linux文件、目录与磁盘格式"><a href="#第二部分-Linux文件、目录与磁盘格式" class="headerlink" title="第二部分 Linux文件、目录与磁盘格式"></a>第二部分 Linux文件、目录与磁盘格式</h1><h2 id="第五章-Linux文件权限与目录配置"><a href="#第五章-Linux文件权限与目录配置" class="headerlink" title="第五章 Linux文件权限与目录配置"></a>第五章 Linux文件权限与目录配置</h2><ol><li>Linux一般将文件可存取的身份分为三个类别，分别是：owner/group/others,且三种身份各有read/write/execute等权限</li><li>文件拥有者，群组，其他人的概念</li><li>Linux文件权限的概念<ol><li>Linux文件属性<blockquote><p>-rw-r–r–. 1 root root 1864 May 4 18:01 initial-setup-ks.cfg<br>（档案类型权限）（连接数）（档案拥有者）（档案所属群组）（档案最后被修改的时间）（档案名）</p><ol start="2"><li><blockquote><p>-rwxrwx—<br>(档案拥有者权限)(档案所属群组权限)(其他人权限)</p></blockquote></li></ol></blockquote><ul><li>d 代表目录</li><li>[-]表示文件</li><li>[i]表示链接文件</li><li>[b]设备文件里面的可供存储的周边设备</li><li>[c]设备文件里的序列设备，如键盘，鼠标<ol start="3"><li>Linux文件权限的重要性</li><li>如何改变文件属性和权限</li><li>常用指令<blockquote><p>chgrp:改变文件所属群组<br>chown:改变文件拥有者<br>chmod:改变文件的权限，SUID，SGID，SBIT等特性</p></blockquote></li><li>改变所属群组，chgrp<blockquote><p>chgrp [-R] dirname/filename …选项与参数<br>chgrp users initial-setup-ks.cfg #改变所属群组为users</p></blockquote></li><li>改变文件拥有者，chown<blockquote><p>chown [-R] 帐号名称 文件或目录<br>chown [-R] 帐号名称：群组名称 文件或目录<br>chown bin initial-setup-ks.cfg<br>ls -l<br>-rw-r–r–. 1 bin users 1864 initial-setup-ks<br>将initial-setup-ks.cfg的拥有者改回为root<br>chown root:root initial-setup-ks.cfg  </p></blockquote><ol><li>什么时候需要改变文件的群组与拥有者？<ul><li>复制文件给你之外的其他人时<blockquote><p>cp 来源文件 目标文件(cp 会复制执行者的属性和权限，复制给其他用户就需要修改权限才能使用)</p></blockquote></li></ul></li></ol></li><li>改变权限 chmod<ol><li>有两种方法，分别可以采用使用数字或者是符号来进行权限的变更</li><li>数字类型改变文件权限<ol><li>r:4</li><li>w:2</li><li>x:1<blockquote><p>chmod [-R] xyz 文件或目录<br>chmod 777 .bashrc<br>ls -l<br>-rwxrwxrwx.1 root root 2013 .bashrc</p></blockquote></li><li>不想让其他人看到： 740</li></ol></li><li>符号类型改变文件权限<ol><li>user - u</li><li>group -g</li><li>others - o</li><li>假如我们要设置一个文件权限为 “-rwxr-xr-x“<blockquote><p>chmod u=rwx,go=rx .bashrc  </p></blockquote></li><li>假如设置文件权限为 ”-rwxr-xr–“<blockquote><p>chmod u=rwx,g=rx,o=r .bashrc</p></blockquote></li><li>将权限去掉，而不变更其他已存在的权限,比如拿掉全部人的执行权限<blockquote><p>chmod a-x .bashrc    </p></blockquote></li></ol></li></ol></li><li>目录与文件的权限意义：<strong>注意目录的执行的权利设置</strong> </li><li>Linux目录配置的依据–FHS  <ul><li>/(root,根目录)：与开机系统相关</li><li>/usr(unix software resource):与软件安装/执行相关</li><li>/var(variable):与系统运行过程有关</li></ul></li><li>绝对路径与相对路径  <h2 id="第六章-Linux文件与目录管理"><a href="#第六章-Linux文件与目录管理" class="headerlink" title="第六章 Linux文件与目录管理"></a>第六章 Linux文件与目录管理</h2></li></ol></li></ul></li></ol></li><li>目录的相关操作<ol><li>. 代表此层目录</li><li>..  代表上一层目录</li><li><ul><li>代表前一个工作目录</li></ul></li><li>～ 代表目前使用者身份所在的主文件夹</li><li>～account 代表account这个使用者的主文件夹</li></ol></li><li>几个常见的处理目录的指令：<ol><li>cd :变换目录</li><li>pwd: 显示目前的目录</li><li>mkdir: 创建一个新的目录</li><li>rmdir: 删除一个空的目录 </li></ol></li><li>关于可执行文件路径的变量：$PATH</li><li>文件与目录管理<ol><li>文件与目录的检视： ls</li></ol></li><li>复制，删除与移动<ol><li>cp (复制文件或目录) <blockquote><p>cp 来源文件 目标文件</p></blockquote></li><li>rm(移除文件或目录)<blockquote><p>rm [-fir] 文件或目录</p></blockquote></li><li>mv(移动文件或目录，或更名)<br>mv [-fiu] 源文件 目标文件  </li></ol></li><li>文件内容查询 <ol><li>cat 由第一行开始显示文件内容 </li><li>tac 从最后一行开始显示</li><li>nl 显示的时候顺便输出行号</li><li>more 一页一页的显示文件内容</li><li>less 与more相似，但可以往前翻页</li><li>head 只看头几行</li><li>tail 只看尾巴几行</li><li>od 以二进制的方式读取文件内容</li></ol></li><li>修改文件时间或创建新文件<ol><li>三个时间<ul><li>mtime 文件变更时间</li><li>ctime 文件状态改变时间，如权限属性更改</li><li>atime 文件被取用就会更新这个读取时间</li></ul></li><li>touch [-acdmt] 文件</li></ol></li><li>文件默认权限：umask <blockquote><p>umask -S</p></blockquote></li><li>观察文件类型：file</li><li>指令与文件的搜寻<ol><li>指令文件名的搜寻<ol><li>which(寻找可执行文件) </li></ol></li><li>文件文件名的搜寻<ol><li>whereis(由一些特定的目录中寻找文件文件名)   </li><li>locate -l 5 passd(找出系统中所有与passwd有关的文件名，且只列出5个)</li><li>updatedb (更新数据库)</li><li>find()<h2 id="第七章-Linux磁盘与文件系统管理"><a href="#第七章-Linux磁盘与文件系统管理" class="headerlink" title="第七章 Linux磁盘与文件系统管理"></a>第七章 Linux磁盘与文件系统管理</h2><h2 id="第八章-文件的压缩与打包"><a href="#第八章-文件的压缩与打包" class="headerlink" title="第八章 文件的压缩与打包"></a>第八章 文件的压缩与打包</h2></li></ol></li></ol></li></ol><hr><hr><h1 id="第三部分-学习Shell与Shell-scripts"><a href="#第三部分-学习Shell与Shell-scripts" class="headerlink" title="第三部分 学习Shell与Shell scripts"></a>第三部分 学习Shell与Shell scripts</h1><h2 id="第九章-vim程序编辑器"><a href="#第九章-vim程序编辑器" class="headerlink" title="第九章 vim程序编辑器"></a>第九章 vim程序编辑器</h2><h2 id="第十章-认识与学习-BASH"><a href="#第十章-认识与学习-BASH" class="headerlink" title="第十章 认识与学习 BASH"></a>第十章 认识与学习 BASH</h2><h2 id="第十一章-正则表达式与文件格式化处理"><a href="#第十一章-正则表达式与文件格式化处理" class="headerlink" title="第十一章 正则表达式与文件格式化处理"></a>第十一章 正则表达式与文件格式化处理</h2><h2 id="第十二章-学习shell-scripts"><a href="#第十二章-学习shell-scripts" class="headerlink" title="第十二章 学习shell scripts"></a>第十二章 学习shell scripts</h2><hr><hr><h1 id="第四部分-Linux使用者管理"><a href="#第四部分-Linux使用者管理" class="headerlink" title="第四部分 Linux使用者管理"></a>第四部分 Linux使用者管理</h1><h2 id="第十三章-Linux-帐号管理与ACL权限控制"><a href="#第十三章-Linux-帐号管理与ACL权限控制" class="headerlink" title="第十三章 Linux 帐号管理与ACL权限控制"></a>第十三章 Linux 帐号管理与ACL权限控制</h2><h2 id="第十四章-磁盘配额（Quota）与进阶文件系统管理"><a href="#第十四章-磁盘配额（Quota）与进阶文件系统管理" class="headerlink" title="第十四章 磁盘配额（Quota）与进阶文件系统管理"></a>第十四章 磁盘配额（Quota）与进阶文件系统管理</h2><h2 id="第十五章-例行性工作调度（crontab）"><a href="#第十五章-例行性工作调度（crontab）" class="headerlink" title="第十五章 例行性工作调度（crontab）"></a>第十五章 例行性工作调度（crontab）</h2><h2 id="第十六章-程序管理与SELinux初探"><a href="#第十六章-程序管理与SELinux初探" class="headerlink" title="第十六章 程序管理与SELinux初探"></a>第十六章 程序管理与SELinux初探</h2><hr><hr><h1 id="第五部分-Linux系统管理员"><a href="#第五部分-Linux系统管理员" class="headerlink" title="第五部分 Linux系统管理员"></a>第五部分 Linux系统管理员</h1><h2 id="第十七章-认识系统服务（daemon）"><a href="#第十七章-认识系统服务（daemon）" class="headerlink" title="第十七章 认识系统服务（daemon）"></a>第十七章 认识系统服务（daemon）</h2><h2 id="第十八章-认识与分析登录文件"><a href="#第十八章-认识与分析登录文件" class="headerlink" title="第十八章 认识与分析登录文件"></a>第十八章 认识与分析登录文件</h2><h2 id="第十九章-开机流程、模块化管理与loader"><a href="#第十九章-开机流程、模块化管理与loader" class="headerlink" title="第十九章 开机流程、模块化管理与loader"></a>第十九章 开机流程、模块化管理与loader</h2><h2 id="第二十章-网络设置与备份策略"><a href="#第二十章-网络设置与备份策略" class="headerlink" title="第二十章 网络设置与备份策略"></a>第二十章 网络设置与备份策略</h2><h2 id="第二十一章-软件安装：-源代码与Tarball"><a href="#第二十一章-软件安装：-源代码与Tarball" class="headerlink" title="第二十一章 软件安装： 源代码与Tarball"></a>第二十一章 软件安装： 源代码与Tarball</h2><h2 id="第二十二章-软件安装：-RPM，SRP与YUM功能"><a href="#第二十二章-软件安装：-RPM，SRP与YUM功能" class="headerlink" title="第二十二章 软件安装： RPM，SRP与YUM功能"></a>第二十二章 软件安装： RPM，SRP与YUM功能</h2><h2 id="第二十三章-X-Window设置介绍"><a href="#第二十三章-X-Window设置介绍" class="headerlink" title="第二十三章 X Window设置介绍"></a>第二十三章 X Window设置介绍</h2><h2 id="第二十四章-核心编译"><a href="#第二十四章-核心编译" class="headerlink" title="第二十四章 核心编译"></a>第二十四章 核心编译</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>从头再来可能并不是一个好的办法</title>
+      <link href="/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/"/>
+      <url>/2020/03/22/%E4%BB%8E%E5%A4%B4%E5%86%8D%E6%9D%A5%E5%8F%AF%E8%83%BD%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="悲惨"><a href="#悲惨" class="headerlink" title="悲惨"></a>悲惨</h1><p>其实我刚写了一大段，出问题了，然后没备份。  </p><hr><p>大概就是：<br>起因：今天不知道<strong>linux</strong>给某一个文件夹的拥有赋给另外一个用户，从<strong>root</strong>用户到我自己，觉得问题出在我是一路用的是<strong>root</strong>用户创建的博客，想要重新来过，重新开始了一段距离，这样好浪费时间啊，于是继续找怎么弄。<br>终于：  </p><blockquote><p>chown -R toughguy:toughguy *</p></blockquote><p>很奇怪，我把自己的东西给自己。  </p><hr><p>教训：避免不加思索的重新来过。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇博客文章</title>
+      <link href="/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+      <url>/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h2><p>  搭建了hexo，遇到了一些语言的问题，我的english好捞，已经提醒了我怎么做，可是我没有看懂，白白浪费了很多时间用来做重复的工作。好在最后弄好了。<br>  长城不是一天建成的，我建好的城墙好像每次都是建到一半，然后放弃了，岁月渐长，年久失修，痕迹退去，这也是一种浪费吧。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>

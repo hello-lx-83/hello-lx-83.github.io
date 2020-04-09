@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ifungo.top/"/>
-  <updated>2020-03-29T15:48:32.384Z</updated>
+  <updated>2020-04-09T08:12:54.372Z</updated>
   <id>http://blog.ifungo.top/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>snap占用/dev/loop0-/dev/loop11占用100%</title>
+    <link href="http://blog.ifungo.top/2020/04/09/snap%E5%8D%A0%E7%94%A8/dev/loop0-/dev/loop11%E5%8D%A0%E7%94%A8100%/"/>
+    <id>http://blog.ifungo.top/2020/04/09/snap%E5%8D%A0%E7%94%A8/dev/loop0-/dev/loop11%E5%8D%A0%E7%94%A8100%/</id>
+    <published>2020-04-09T08:10:27.588Z</published>
+    <updated>2020-04-09T08:12:54.372Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>命令:<br>sudo apt autoremove –purge snapd</p></blockquote><p>不清楚为什么这么做，后面看完书再写原因。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;命令:&lt;br&gt;sudo apt autoremove –purge snapd&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;不清楚为什么这么做，后面看完书再写原因。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>不想学习的时候</title>
+    <link href="http://blog.ifungo.top/2020/04/09/%E4%B8%8D%E6%83%B3%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%97%B6%E5%80%99/"/>
+    <id>http://blog.ifungo.top/2020/04/09/%E4%B8%8D%E6%83%B3%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%97%B6%E5%80%99/</id>
+    <published>2020-04-09T07:44:27.827Z</published>
+    <updated>2020-04-09T07:46:49.368Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Actuallly-没有心思继续学习"><a href="#Actuallly-没有心思继续学习" class="headerlink" title="Actuallly,没有心思继续学习"></a>Actuallly,没有心思继续学习</h1><p>陷入了学习的困境，或许我应该去看一下有可持续发展的内容，然后学习一下可持续学习。</p><p>from 渔夫不打鱼</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Actuallly-没有心思继续学习&quot;&gt;&lt;a href=&quot;#Actuallly-没有心思继续学习&quot; class=&quot;headerlink&quot; title=&quot;Actuallly,没有心思继续学习&quot;&gt;&lt;/a&gt;Actuallly,没有心思继续学习&lt;/h1&gt;&lt;p&gt;陷入了学习的
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>《人工智能实践：Tensorflow笔记 》学习笔记</title>
